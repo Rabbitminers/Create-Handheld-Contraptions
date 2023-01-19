@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8.2",
+  "package": "com.rabbitminers.handheldcontraptions.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "steampowered.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "MixinWorldRenderer"
+  ]
+}

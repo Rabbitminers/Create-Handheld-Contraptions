@@ -28,6 +28,10 @@ public class HHCConfig {
                     .comment("Maximum stress output of Windmill Generator")
                     .defineInRange("windmillMaxStressOutput", 312,1, Integer.MAX_VALUE);
 
+            furnaceEngineMaxStressOutput = builder
+                    .comment("Maximum stress output of Furnace Engine Generator")
+                    .defineInRange("furnaceEngineMaxStressOutput", 1024, 1, Integer.MAX_VALUE);
+
             builder.pop();
 
             builder.comment("Modifier Component Configurations")

@@ -1,6 +1,5 @@
 package com.rabbitminers.handheldcontraptions.tools.instance;
 
-import com.rabbitminers.handheldcontraptions.generators.Generator;
 import com.rabbitminers.handheldcontraptions.generators.IToolGenerator;
 import com.rabbitminers.handheldcontraptions.tools.data.ToolTypes;
 

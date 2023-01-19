@@ -1,6 +1,6 @@
 package com.rabbitminers.handheldcontraptions.tools.instance;
 
-import com.rabbitminers.handheldcontraptions.generators.Generator;
+import com.rabbitminers.handheldcontraptions.generators.BaseGenerator;
 import com.rabbitminers.handheldcontraptions.generators.IToolGenerator;
 
 public interface IToolBaseInstance {
@@ -8,9 +8,7 @@ public interface IToolBaseInstance {
         return false;
     }
 
-    default IToolGenerator getGenerator() {
-        return new Generator();
-    }
+    default IToolGenerator getGenerator() {return new BaseGenerator(0);}
 
     default float getMaximumStressOutput() {
         return 0.0f;

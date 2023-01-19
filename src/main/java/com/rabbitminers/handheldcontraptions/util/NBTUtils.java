@@ -10,4 +10,13 @@ public abstract class NBTUtils {
     public static CompoundTag getOrGenerateCompoundTag(ItemStack stack) {
         return stack.hasTag() ? stack.getTag() : new CompoundTag();
     }
+
+    public static int getOrCreateTagInt(String name, ItemStack stack) {
+        CompoundTag nbt = getOrGenerateCompoundTag(stack);
+        return 0;
+    }
+
+    public static int getOrCreateTagInt(String name, CompoundTag nbt) {
+        return 0;
+    }
 }
